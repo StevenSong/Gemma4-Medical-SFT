@@ -76,7 +76,7 @@ args = SFTConfig(
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_ID,
     dtype=torch.bfloat16,
-    attn_implementation="flash_attention_2",  # hybrid local/global attn needs SWA support
+    attn_implementation="sdpa",  # hybrid local/global attn needs SWA support
 )
 
 # Text-only dataset: freeze the vision tower + projector. Saves optimizer state
