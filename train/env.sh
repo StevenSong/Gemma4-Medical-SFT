@@ -11,6 +11,7 @@ export NCCL_IB_DISABLE=0
 # 0 = a ring must use the same NIC at both ends of a cross-node hop.
 # Default (2) lets NCCL try cross-rail paths that don't physically exist here.
 export NCCL_CROSS_NIC=0
+export NCCL_ALGO=Ring
 
 # ---- GPUDirect RDMA ----
 export NCCL_NET_GDR_LEVEL=PIX           # NIC + GPU pair share a PCIe switch
