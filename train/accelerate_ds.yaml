@@ -1,6 +1,5 @@
 compute_environment: LOCAL_MACHINE
 distributed_type: DEEPSPEED
-mixed_precision: bf16
 
 deepspeed_config:
   deepspeed_config_file: ds_zero3.json
